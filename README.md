@@ -36,4 +36,4 @@ UIKitActivity#setContentView(android.uikit.ViewBlock)
 
 ## NOTE
 
- 1. 目前，本版本仍在开发中...
+ 1. 目前，本版本仍在开发中... 希望大家clone 下来玩玩，给点建议
