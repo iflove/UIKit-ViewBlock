@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="block_class" />
+
+    <declare-styleable name="ViewBlockTheme">
+        <attr name="enterAnim" format="reference" />
+        <attr name="exitAnim" format="reference" />
+        <attr name="popEnterAnim" format="reference" />
+        <attr name="popExitAnim" format="reference" />
+    </declare-styleable>
+
+</resources>
