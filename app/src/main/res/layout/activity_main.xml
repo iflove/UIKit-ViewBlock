@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:block_class="android.uikit.demo.viewblock.ScreenViewBlock"
+    tools:context="android.uikit.demo.activity.UIKitActivity"
+    tools:ignore="MissingPrefix">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/status_bar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:block_class="android.uikit.demo.viewblock.ActionBarBlock">
+
+
+            <TextView
+                android:id="@+id/appBarTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:text=" Bar!"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:block_class="android.uikit.demo.viewblock.MainBlock">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/bannerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#ff9700">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/mainBlockTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#009689"
+                android:text=" This is a MainBlock"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/nav_bar"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:block_class="android.uikit.demo.viewblock.NavBarBlock">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="android.uikit.demo.fragment.MainFragment"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="68dp" />
+
+
+    <TextView
+        android:id="@+id/screenViewBlockTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Hello World!" />
+
+</FrameLayout>
