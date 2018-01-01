@@ -19,8 +19,21 @@
 
 -------------------
 
+## Demo
 
+![][UIKit-Activity.gif]
+
+[UIKit-Activity.gif]: https://github.com/iflove/UIKit-ViewBlock/blob/master/screenshot/UIKit-Activity.gif
+
+> 布局直接使用ViewBlock
+```
+app:block_class="android.uikit.demo.viewblock.MainBlock"
+```
+> 设置当前Activity显示ViewBlock
+```
+UIKitActivity#setContentView(android.uikit.ViewBlock)
+```
 
 ## NOTE
 
- 1. 目前，本版本仍在开发中...
+ 1. 目前，本版本仍在开发中... 希望大家clone 下来玩玩，给点建议
