@@ -1,4 +1,5 @@
-# UIKit-ViewBlock
+# UIKit-ViewBlock 
+[ ![Download](https://api.bintray.com/packages/lazy/maven/uikit/images/download.svg?version=1.0.0) ](https://bintray.com/lazy/maven/uikit/1.0.0/link)
 
 > 简介：快速代替fragment的轻量级解耦类,能对复杂布局划分Block...
 
@@ -18,6 +19,11 @@
 
 
 -------------------
+## gradle 
+```
+compile 'com.roogle.android.uikit:uikit:1.0.0'
+
+```
 
 ## Demo
 
